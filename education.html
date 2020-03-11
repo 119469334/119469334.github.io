@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Personal Information</title>
+
+  <!--linking style sheet/font -->
+
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Simonetta:400,900|Balthazar">
+  
+  <link rel="stylesheet" type="text/css" href="Css/projectcss.css">
+ 
+</head>
+<!--intrenal css for leaving cert results -->
+<style>
+	#customers {
+ 
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: black;
+  color: white;
+}
+</style>
+
+<body>
+
+  <!-- inserting nav bar-->
+
+	<div class="topnav">
+		<a href="cv.html">Home</a>
+  		<a href="personalDetails.html">Personal Details</a>
+  		<a href="PartTimeWork.html">part-time work experience</a>
+	</div>
+	
+   <div id="w" itemscope itemtype="http://schema.org/Person">
+		<header class="clearfix">
+			<div id="info">	
+
+		<!-- inserting personal address and email address -->
+				<h1>
+					<span itemprop="name">Educational Details</span>
+				</h1>
+				<h3>
+					<span itemprop="jobTitle">B.I.S student 
+				at University college Cork
+			       </span>
+			    </h3>
+				<small itemprop="address" itemscope itemtype=
+				"http://schema.org/PostalAddress">
+				  <span itemprop="addressLocality">Cork
+				  </span>, 
+				  <span itemprop="addressRegion">Munster
+				  </span>, 
+				  <span itemprop="addressCountry">Ireland
+				  </span>
+				</small>
+				<small><span itemprop="email">jack123@gmail.com</span></small>
+				
+			</div>
+			
+			
+		</header>
+		<section>
+			<h2>Second Level eduction </h2>
+			<p>
+				For my second level education i went to Gael cholaiste Mhuire(AG).This is an all Irish speaking school located in Cork city.I attended this school from 2013-2019. Below you will be able to see my Leaving certificate results from the year 2019.
+			</p>
+		</section>
+
+    <!-- inserting table and its contents-->
+		
+		<section id="profile">
+			<h2>My Leaving CertResults</h2>
+		<table id="customers">
+  <tr>
+    <th>Subject</th>
+    <th>Level</th>
+    <th>grade</th>
+  </tr>
+  <tr>
+    <td>Irish</td>
+    <td>Higher</td>
+    <td>H2</td>
+  </tr>
+  <tr>
+    <td>Maths</td>
+    <td>Higher</td>
+    <td>H4</td>
+  </tr>
+  <tr>
+    <td>English</td>
+    <td>Higher</td>
+    <td>H4</td>
+  </tr>
+  <tr>
+    <td>Accounting</td>
+    <td>Higher</td>
+    <td>H3</td>
+  </tr>
+  <tr>
+    <td>Economics</td>
+    <td>Higher</td>
+    <td>H4</td>
+  </tr>
+  <tr>
+    <td>History</td>
+    <td>Higher</td>
+    <td>H3</td>
+  </tr>
+  <tr>
+    <td>French</td>
+    <td>Ordinary</td>
+    <td>O4</td>
+ </tr>
+</table>
+		</section>
+		
+		<section>
+			<h2>College </h2>
+			<p>
+				I am currently studying business information systems in University college Cork.I am a afirst year student. The skills i have obtained so far are listed below.
+			</p>
+		</section>
+	<!--listing skills  -->
+  <section id="skills" class="clearfix" itemscope itemtype="http://schema.org/ItemList">
+      <h2 itemprop="name">Skillset</h2>
+      <section id="skills-left">
+        <h4 itemprop="about"></h4>
+        <ul>
+          <li itemprop="itemListElement">HTML5/CSS3</li>
+          <li itemprop="itemListElement">JavaScript
+          </li>
+          <li itemprop="itemListElement">VB.Net</li>
+          <li itemprop="itemListElement">Acess Databases</li>
+          <li itemprop="itemListElement">Linux</li>
+          
+        </ul>
+      </section>
+  </div>
+</body>
+</html>

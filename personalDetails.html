@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Personal Information</title>
+
+  <!--linking style sheet/font -->
+
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Simonetta:400,900|Balthazar">
+  <link rel="stylesheet" type="text/css" href="Css/projectcss.css">
+ 
+</head>
+
+<body>
+	<!-- inserting nav bar-->
+
+	<div class="topnav">
+		<a href="project11.html">Home</a>
+  		<a href="education.html">educational details</a>
+  		<a href="PartTimeWork.html">part-time work experience</a>
+	</div>
+
+
+<!-- inserting personal address and email in the header-->
+
+	<div id="w" itemscope itemtype="http://schema.org/Person">
+		<header class="clearfix">
+			<div id="info">			
+				<h1>
+					<span itemprop="name">Jack crosby</span>
+				</h1>
+				<h3>
+					<span itemprop="jobTitle">B.I.S student 
+				at University College Cork
+			       </span>
+			    </h3>
+				<small itemprop="address" itemscope itemtype=
+				"http://schema.org/PostalAddress">
+				  <span itemprop="addressLocality">Cork
+				  </span>, 
+				  <span itemprop="addressRegion">Munster
+				  </span>, 
+				  <span itemprop="addressCountry">Ireland
+				  </span>
+				</small>
+				<small><span itemprop="email">jack123@gmail.com</span></small>
+				
+			</div>
+			<!-- inserting image-->
+
+			<div class="photo">
+				<img src="images/Cv.png">
+			</div>
+
+
+			<!-- inserting info on me-->
+
+		</header>		
+		<section id="profile">
+			<h2>My History &amp; Profile</h2>
+			<p itemprop="description">I'm a 19 year old college student from Ireland.I have been newly introduced to web development and i am truly enjoying it.I am currently studying Business Information Systems at University College Cork</p>
+			
+			<p>This is the first ever web page I have created. I made this web page using HTML Css and Java script.This page was created as a part of a project for the module IS113. </p>
+		</section>
+
+
+		<!-- inserting my skills in a list-->
+
+		
+		<section id="skills" class="clearfix" itemscope itemtype="http://schema.org/ItemList">
+			<h2 itemprop="name">Personal Attributes</h2>
+			<section id="skills-left">
+				<h4 itemprop="about"></h4>
+				<ul>
+					<li itemprop="itemListElement">Communication </li>
+					<li itemprop="itemListElement">Good Work ethic
+					</li>
+					<li itemprop="itemListElement">Determination and Persistence</li>
+					<li itemprop="itemListElement">Honesty</li>
+					<li itemprop="itemListElement">Dependable</li>
+					
+				</ul>
+			</section>
+	</div>
+</body>
+</html>

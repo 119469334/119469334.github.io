@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Personal Information</title>
+
+  <!--linking style sheet/font -->
+
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Simonetta:400,900|Balthazar">
+  <link rel="stylesheet" type="text/css" href="Css/projectcss.css">
+
+  <script type="text/javascript">
+  	function calcSub() {
+  		var SubTotal = document.querySelector('input[name="Selection"]:checked');
+  		if(SubTotal){
+  		var argSelection = SubTotal.value;
+
+  		calcVatTotal(argSelection);
+  	}
+  	else {
+  		alert("Please Select an option");
+  	}
+  	}
+
+  	function calcVatTotal(parmSelection) {
+  		var argsubTotal = parmSelection;
+  		var argdiscountAmt = parmSelection * 0.05;
+  		var argvatAmt = (parmSelection - argdiscountAmt) *.2;
+  		var argTotal = (parmSelection - argdiscountAmt) + argvatAmt;
+
+  		clcDisp(argsubTotal,argdiscountAmt,argvatAmt,argTotal);
+
+  		delete argsubTotal,argdiscountAmt,argvatAmt,argTotal;
+  	}
+
+  	function clcDisp(parmsubTotal, parmdiscountAmt, parmvatAmt, parmTotal){
+  		if(parmsubTotal, parmdiscountAmt, parmvatAmt, parmTotal){
+  			document.getElementById("Subt").innerHTML 
+  			= parmsubTotal;
+  			document.getElementById("Discount").innerHTML 
+  			= parmdiscountAmt;
+  			document.getElementById("vat").innerHTML 
+  			= parmvatAmt;
+  			document.getElementById("total").innerHTML 
+  			= parmTotal;
+  		}
+  		else {
+  			document.getElementById("Subt").innerHTML 
+  			= "";
+  			document.getElementById("Discount").innerHTML 
+  			= "";
+  			document.getElementById("vat").innerHTML 
+  			= "";
+  			document.getElementById("total").innerHTML 
+  			= "";
+  		}
+  	}
+  </script>
+
+
+</head>
+<body>
+		<div class="topnav">
+		<a href="project11.html">Home</a>
+  		<a href="CV.html">CV</a>
+  		<a href="interest.html">Interests</a>
+	</div>
+
+
+
+	<div id="w" itemscope itemtype="http://schema.org/Person">
+		<header class="clearfix">
+			<div id="info">			
+				<h1>
+					<span itemprop="name">Consulting service</span>
+				</h1>
+				<h3>
+					<span itemprop="jobTitle">
+						 University college Cork
+			       </span>
+			    </h3>
+				<small itemprop="address" itemscope itemtype=
+				"http://schema.org/PostalAddress">
+				  <span itemprop="addressLocality">Cork
+				  </span>, 
+				  <span itemprop="addressRegion">Munster
+				  </span>, 
+				  <span itemprop="addressCountry">Ireland
+				  </span>
+				</small>
+				<small><span itemprop="email">Consulting@gmail.com</span></small>
+				
+				
+			</div>
+					</header>
+
+
+			<section id="profile">
+				<h2>About Us</h2>
+				<p itemprop="description">We are a consulting service who supply the latest of Consulting offerings to the market.The areas of performance we work on incude Hyperautomation, Multiexperience and Distributed Cloud.Click below to find out more</p>
+			</section>
+			<div class="Cnav">
+			<button><a href="#HA">Hyperautomation</a></button>
+			<button><a href="#Multi">Multiexperience</a></button>
+			<button><a href="#Cloud">Distribution Cloud</a></button>
+
+		</div>
+
+			<section id="profile">
+				<div id="HA">
+			<h2>Hyperautomation</h2>
+			<h3>What is Hyperautomation</h3>
+			<p itemprop="description">Hyper-automation deals with the application of advanced technologies, including artificial intelligence (AI) and machine learning (ML), to increasingly automate processes and augment humans. Hyper-automation extends across a range of tools that can be automated, but also refers to the sophistication of the automation (i.e., discover, analyse, design, automate, measure, monitor, reassess.)In simple terms, hyper-automation refers to the mixture of automation technologies that exist to augment and expand human capabilities.
+			</p> 
+			<h3>How is Hyper-automation Different from Regular Automation?</h3><p>When we think of automation, terms like robotic process automation come to mind. But, hyper-automation takes an ecosystem of technologically advanced tools and combines them to create a new way to work. </p>
+			<p>It means that low-value tasks are optimally performed with automation tools, machine learning and advanced artificial intelligence so that outputs can be produced automatically and run efficiently with little to no human intervention. Then, together with humans, hyper-automation can create a workplace that is always informed, agile and able to use data and insights for quick and accurate decision-making.</p>
+			<h3>Further reading below</h3>
+			<p><a href="https://www.solvexia.com/blog/what-is-hyperautomation-a-complete-guide">Hyperautomation</a></p>
+		</div>
+	</section>
+		</div>
+<hr>
+
+ 
+			<div id="w" itemscope itemtype="http://schema.org/Person">
+		</section>
+		<section id="profile">
+			<div id="Multi">
+			<h2>Multiexperience</h2>
+			<h3>What is Multiexperiece</h3>
+			<p itemprop="description">Multi-experience development platforms (MXDPs) help enterprises to rapidly scale their applications across a range of devices and platforms. MXDPs can help you develop a single application that can be deployed on a variety of devices. This greatly shortens down your efforts and gives brands more control over their digital experiences.</p>
+
+			<h3>MXDPs will be the new Mobile App Development Platforms (MADPs)</h3><p> Buyers in the market are looking to address the challenge of building and delivering a sizable portfolio of mobile apps for customers, partners, and employees.</p>
+
+			<p>They now are looking for complete user experience. It is no longer enough for them to simply interact with a mobile app or web application. </p>
+						<h3>Further reading below</h3>
+
+			<p><a href="https://www.signitysolutions.com/blog/multi-experience-development/">Multiexperiences</a></p>
+	</section>
+</div>
+<hr>
+	<div id="w" itemscope itemtype="http://schema.org/Person">
+		<section id="profile">
+			<div id="Cloud">
+			<h2>Distributed Cloud</h2>
+				<h3>What is Distributed Cloud?</h3>
+					<p itemprop="description">Distributed cloud is the application of cloud computing technologies to interconnect data and applications served from multiple geographic locationsDistributed, in an information technology (IT) context, means that something is shared among multiple systems which may also be in different locations. Distributed cloud speeds communications for global services and enables more responsive communications for specific regions.</p>
+					<p>Cloud providers use the distributed model to enable lower latency and provide better performance for cloud services. Beyond the cloud provider context, two other examples of distributed cloud are public resource computing and the volunteer cloud.</p>
+					 <h3>Further reading below</h3>
+
+					<p><a href="https://searchitoperations.techtarget.com/definition/distributed-cloud">Distributed Cloud</a></p>
+			
+			
+		</section><hr>
+		<h2>Services</h2>
+	
+
+	<div id="Services">
+	<form>
+		<p><input type="radio" value="200" name="Selection" id="Hyper">
+		Hyperautomation @ 200<br>
+		<input type="radio" value="500" name="Selection" id="Multi">
+		Multiexperience @ 500<br>
+		<input type="radio" value="1000" name="Selection" id="Cloud">
+		Distributed Cloud @ 1000</p><br>
+	</form>
+	<button onclick="calcSub()">Calculate</button>
+	<button onclick="clcDisp()">Clear</button>
+	<br>
+	<p>Sub Total: <span id="Subt"></span></p>
+	<p>-Discount: <span id="Discount"></span></p>
+	<p>+Vat: <span id="vat"></span></p>
+	<p>Total: <span id="total"></span></p>
+</div>
+</div>
+
+
+</body>
+</html>
